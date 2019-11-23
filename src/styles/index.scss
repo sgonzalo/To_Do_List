@@ -1,7 +1,6 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
 /* 
-
     You can write your own styles here...
     
     
@@ -9,5 +8,49 @@
     other sylesheets into your bunde as well, e.j:
     
     import 'relative/path/to/stylesheet.scss';
-
 */
+body {
+    background-color: gray; 
+}
+
+.todo-list {
+    background-color: white;
+    margin: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #efefef;
+    box-shadow: #333333;
+    padding: 30px;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 20px 0;
+    width: 70%;
+    border-bottom: 1px solid white;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    color: #333333;
+}
+
+input[type=checkbox] {
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+input[type=checkbox]:focus {
+    outline: 0;
+}
+
+input[type=text]{
+    text-align: center;
+    border-style:none;
+    width: 70%;
+}
+
+input:focus{outline:none;}
